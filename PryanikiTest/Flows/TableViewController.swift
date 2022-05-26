@@ -10,7 +10,6 @@ import UIKit
 class TableViewController: UITableViewController {
     
     let networkService = NetworkService()
-    
     var model: [CellModel] = []
     var items: [Datum] = []
     var views: [String] = []
@@ -24,11 +23,11 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return items.count
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return model.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,12 +35,17 @@ class TableViewController: UITableViewController {
         switch (indexPath.row) {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "textCell", for: indexPath) as! TextTableViewCell
-            let item = items[indexPath.row].data.text
-            //let cellModel = CellFactory.cellModel(from: item)
-            cell.configureDirect(from: item)
+            let item = model[indexPath.row]
+            let cellModel = CellFactory.cellModel(from: item)
+            cell.configure(from: cellModel)
             return cell
             
         case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "picCell", for: indexPath) as! PictureTableViewCell
+            let item = model[indexPath.row]
+            let cellModel = CellFactory.cellModel(from: item)
+            cell.configurePic(from: cellModel)
+            return cell
 
         default:
             print("Do nothing in row")
@@ -67,6 +71,8 @@ class TableViewController: UITableViewController {
     private func makeSection() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "textCell")
         tableView.register(UINib(nibName: "TextTableViewCell", bundle: nil), forCellReuseIdentifier: "textCell")
+        tableView.register(UINib(nibName: "PictureTableViewCell", bundle: nil), forCellReuseIdentifier: "picCell")
+        tableView.rowHeight = 120
         tableView.reloadData()
     }
 }

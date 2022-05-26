@@ -23,8 +23,4 @@ class TextTableViewCell: UITableViewCell {
         textBoxLabel.text = model.data.text ?? "TETX"
     }
     
-    public func configureDirect(from cell: String?) {
-        textBoxLabel.text = cell
-    }
-    
 }
