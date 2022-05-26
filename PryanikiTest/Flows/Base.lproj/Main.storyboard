@@ -3,58 +3,10 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PryanikiTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="wnq-iN-dj7">
-                                <rect key="frame" x="47" y="219" width="320" height="458.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TextBlock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuD-2h-adp">
-                                        <rect key="frame" x="123" y="0.0" width="74" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hzd-53-n8p">
-                                        <rect key="frame" x="110" y="81.5" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="PJO-Fz-epb"/>
-                                            <constraint firstAttribute="width" constant="100" id="gTn-hf-Rei"/>
-                                        </constraints>
-                                    </imageView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgh-Lq-Hdw">
-                                        <rect key="frame" x="0.0" y="242.5" width="320" height="216"/>
-                                    </pickerView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="wnq-iN-dj7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Cq-Nh-HHx"/>
-                            <constraint firstItem="wnq-iN-dj7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HfL-Vb-MfA"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="hzd-53-n8p" id="bdI-a3-RM4"/>
-                        <outlet property="picker" destination="zgh-Lq-Hdw" id="SFX-Pg-OgC"/>
-                        <outlet property="textBlock" destination="YuD-2h-adp" id="y0G-eW-2cG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-197" y="-60"/>
-        </scene>
         <!--Table View Controller-->
         <scene sceneID="LdY-CV-Z4E">
             <objects>
