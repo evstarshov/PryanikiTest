@@ -16,6 +16,9 @@
 		3AAC7E38283FAD2C00481BB4 /* PryanikiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E37283FAD2C00481BB4 /* PryanikiTestTests.swift */; };
 		3AAC7E42283FAD2C00481BB4 /* PryanikiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E41283FAD2C00481BB4 /* PryanikiTestUITests.swift */; };
 		3AAC7E44283FAD2C00481BB4 /* PryanikiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E43283FAD2C00481BB4 /* PryanikiTestUITestsLaunchTests.swift */; };
+		3AAC7E56283FAEAF00481BB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */; };
+		3AAC7E59283FAF0600481BB4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3AAC7E58283FAF0600481BB4 /* Alamofire */; };
+		3AAC7E5B283FAFA400481BB4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E5A283FAFA400481BB4 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		3AAC7E3D283FAD2C00481BB4 /* PryanikiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PryanikiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAC7E41283FAD2C00481BB4 /* PryanikiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTestUITests.swift; sourceTree = "<group>"; };
 		3AAC7E43283FAD2C00481BB4 /* PryanikiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3AAC7E5A283FAFA400481BB4 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAC7E59283FAF0600481BB4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,7 @@
 		3AAC7E50283FAD6800481BB4 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				3AAC7E5A283FAFA400481BB4 /* Entity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 		3AAC7E52283FAD7B00481BB4 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -183,6 +191,9 @@
 			dependencies = (
 			);
 			name = PryanikiTest;
+			packageProductDependencies = (
+				3AAC7E58283FAF0600481BB4 /* Alamofire */,
+			);
 			productName = PryanikiTest;
 			productReference = 3AAC7E1D283FAD2A00481BB4 /* PryanikiTest.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +266,9 @@
 				Base,
 			);
 			mainGroup = 3AAC7E14283FAD2A00481BB4;
+			packageReferences = (
+				3AAC7E57283FAF0600481BB4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3AAC7E1E283FAD2A00481BB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AAC7E25283FAD2A00481BB4 /* ViewController.swift in Sources */,
+				3AAC7E5B283FAFA400481BB4 /* Entity.swift in Sources */,
 				3AAC7E21283FAD2A00481BB4 /* AppDelegate.swift in Sources */,
+				3AAC7E56283FAEAF00481BB4 /* NetworkService.swift in Sources */,
 				3AAC7E23283FAD2A00481BB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,6 +658,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AAC7E57283FAF0600481BB4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AAC7E58283FAF0600481BB4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AAC7E57283FAF0600481BB4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AAC7E15283FAD2A00481BB4 /* Project object */;
 }
