@@ -9,10 +9,10 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    let networkService = NetworkService()
-    var model: [CellModel] = []
-    var items: [Datum] = []
-    var views: [String] = []
+    // MARK: Private properties
+    
+    private let networkService = NetworkService()
+    private var model: [CellModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,17 +58,18 @@ class TableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = model[indexPath.row]
+        showAlert(message: item.name)
+    }
     
+   // MARK: Private methods
     
     private func getData() {
         networkService.makeRequest { [weak self] response in
             guard let self = self else { return }
             guard let response = response else { return }
             self.model = response.data
-            self.items = response.data
-            self.views = response.view
-            print(self.items)
-            print(self.items.count)
             self.makeSection()
         }
     }
@@ -80,6 +81,12 @@ class TableViewController: UITableViewController {
         tableView.register(UINib(nibName: "PickerTableViewCell", bundle: nil), forCellReuseIdentifier: "pickerCell")
         tableView.rowHeight = 120
         tableView.reloadData()
+    }
+    
+    private func showAlert(message: String?) {
+        let alertVC = UIAlertController(title: "Warning", message: "Initiated by object: \(message ?? "id error")", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        present(alertVC, animated: true)
     }
 }
 
@@ -98,4 +105,13 @@ extension TableViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return model.last?.data.variants![row].text
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let id = model.last?.data.variants?[row].id
+        let objectName = model.last?.name
+        let alertVC = UIAlertController(title: "Initiated by object \(objectName ?? "name error")", message: "Initiated by ID: \(id ?? 1)", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        present(alertVC, animated: true)
+    }
+    
 }
