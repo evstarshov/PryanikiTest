@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5T-wc-VME">
-                        <rect key="frame" x="0.0" y="36.5" width="320" height="162"/>
+                        <rect key="frame" x="0.0" y="37" width="320" height="162"/>
                     </pickerView>
                 </subviews>
                 <constraints>

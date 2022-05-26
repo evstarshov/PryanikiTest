@@ -14,6 +14,8 @@ class TableViewController: UITableViewController {
     private let networkService = NetworkService()
     private var model: [CellModel] = []
     
+    // MARK: Lifecycle methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
