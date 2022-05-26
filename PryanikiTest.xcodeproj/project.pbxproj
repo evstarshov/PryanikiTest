@@ -19,6 +19,7 @@
 		3AAC7E56283FAEAF00481BB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */; };
 		3AAC7E59283FAF0600481BB4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3AAC7E58283FAF0600481BB4 /* Alamofire */; };
 		3AAC7E5B283FAFA400481BB4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E5A283FAFA400481BB4 /* Entity.swift */; };
+		3AC7220C283FBAB5000AD5EF /* imageLoaderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7220B283FBAB4000AD5EF /* imageLoaderExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		3AAC7E43283FAD2C00481BB4 /* PryanikiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		3AAC7E5A283FAFA400481BB4 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		3AC7220B283FBAB4000AD5EF /* imageLoaderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageLoaderExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		3AAC7E53283FAD8900481BB4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3AC7220A283FB982000AD5EF /* Extensions */,
 				3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */,
 				3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */,
 			);
@@ -173,6 +176,14 @@
 				3AAC7E29283FAD2B00481BB4 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AC7220A283FB982000AD5EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AC7220B283FBAB4000AD5EF /* imageLoaderExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC7220C283FBAB5000AD5EF /* imageLoaderExtension.swift in Sources */,
 				3AAC7E25283FAD2A00481BB4 /* ViewController.swift in Sources */,
 				3AAC7E5B283FAFA400481BB4 /* Entity.swift in Sources */,
 				3AAC7E21283FAD2A00481BB4 /* AppDelegate.swift in Sources */,
