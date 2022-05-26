@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2A5916283FFCED0066B776 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A5914283FFCED0066B776 /* PictureTableViewCell.swift */; };
+		3A2A5917283FFCED0066B776 /* PictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A5915283FFCED0066B776 /* PictureTableViewCell.xib */; };
+		3A2A591A284000850066B776 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A5918284000850066B776 /* PickerTableViewCell.swift */; };
+		3A2A591B284000850066B776 /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A5919284000850066B776 /* PickerTableViewCell.xib */; };
 		3AAC7E21283FAD2A00481BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */; };
 		3AAC7E23283FAD2A00481BB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */; };
-		3AAC7E25283FAD2A00481BB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E24283FAD2A00481BB4 /* ViewController.swift */; };
 		3AAC7E28283FAD2A00481BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAC7E26283FAD2A00481BB4 /* Main.storyboard */; };
 		3AAC7E2A283FAD2B00481BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AAC7E29283FAD2B00481BB4 /* Assets.xcassets */; };
 		3AAC7E2D283FAD2B00481BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAC7E2B283FAD2B00481BB4 /* LaunchScreen.storyboard */; };
 		3AAC7E38283FAD2C00481BB4 /* PryanikiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E37283FAD2C00481BB4 /* PryanikiTestTests.swift */; };
 		3AAC7E42283FAD2C00481BB4 /* PryanikiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E41283FAD2C00481BB4 /* PryanikiTestUITests.swift */; };
 		3AAC7E44283FAD2C00481BB4 /* PryanikiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E43283FAD2C00481BB4 /* PryanikiTestUITestsLaunchTests.swift */; };
+		3AAC7E56283FAEAF00481BB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */; };
+		3AAC7E59283FAF0600481BB4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3AAC7E58283FAF0600481BB4 /* Alamofire */; };
+		3AAC7E5B283FAFA400481BB4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E5A283FAFA400481BB4 /* Entity.swift */; };
+		3AC7220C283FBAB5000AD5EF /* imageLoaderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7220B283FBAB4000AD5EF /* imageLoaderExtension.swift */; };
+		3AC72211283FE23F000AD5EF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC72210283FE23F000AD5EF /* TableViewController.swift */; };
+		3AC72215283FE5C0000AD5EF /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC72213283FE5C0000AD5EF /* TextTableViewCell.swift */; };
+		3AC72216283FE5C0000AD5EF /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC72214283FE5C0000AD5EF /* TextTableViewCell.xib */; };
+		3AC72218283FE669000AD5EF /* TextFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC72217283FE669000AD5EF /* TextFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A2A5914283FFCED0066B776 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
+		3A2A5915283FFCED0066B776 /* PictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureTableViewCell.xib; sourceTree = "<group>"; };
+		3A2A5918284000850066B776 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		3A2A5919284000850066B776 /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
 		3AAC7E1D283FAD2A00481BB4 /* PryanikiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PryanikiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AAC7E24283FAD2A00481BB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AAC7E27283FAD2A00481BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AAC7E29283FAD2B00481BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AAC7E2C283FAD2B00481BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,13 @@
 		3AAC7E3D283FAD2C00481BB4 /* PryanikiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PryanikiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAC7E41283FAD2C00481BB4 /* PryanikiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTestUITests.swift; sourceTree = "<group>"; };
 		3AAC7E43283FAD2C00481BB4 /* PryanikiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3AAC7E5A283FAFA400481BB4 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		3AC7220B283FBAB4000AD5EF /* imageLoaderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageLoaderExtension.swift; sourceTree = "<group>"; };
+		3AC72210283FE23F000AD5EF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3AC72213283FE5C0000AD5EF /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		3AC72214283FE5C0000AD5EF /* TextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
+		3AC72217283FE669000AD5EF /* TextFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAC7E59283FAF0600481BB4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +121,12 @@
 		3AAC7E1F283FAD2A00481BB4 /* PryanikiTest */ = {
 			isa = PBXGroup;
 			children = (
-				3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */,
-				3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */,
-				3AAC7E24283FAD2A00481BB4 /* ViewController.swift */,
-				3AAC7E26283FAD2A00481BB4 /* Main.storyboard */,
-				3AAC7E29283FAD2B00481BB4 /* Assets.xcassets */,
-				3AAC7E2B283FAD2B00481BB4 /* LaunchScreen.storyboard */,
 				3AAC7E2E283FAD2B00481BB4 /* Info.plist */,
+				3AAC7E54283FADB300481BB4 /* Resources */,
+				3AAC7E53283FAD8900481BB4 /* Core */,
+				3AAC7E52283FAD7B00481BB4 /* API */,
+				3AAC7E51283FAD7300481BB4 /* Flows */,
+				3AAC7E50283FAD6800481BB4 /* Entities */,
 			);
 			path = PryanikiTest;
 			sourceTree = "<group>";
@@ -127,6 +148,73 @@
 			path = PryanikiTestUITests;
 			sourceTree = "<group>";
 		};
+		3AAC7E50283FAD6800481BB4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC7E5A283FAFA400481BB4 /* Entity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3AAC7E51283FAD7300481BB4 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				3AC72212283FE514000AD5EF /* Cells */,
+				3AAC7E26283FAD2A00481BB4 /* Main.storyboard */,
+				3AAC7E2B283FAD2B00481BB4 /* LaunchScreen.storyboard */,
+				3AC72210283FE23F000AD5EF /* TableViewController.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		3AAC7E52283FAD7B00481BB4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC7E55283FAEAF00481BB4 /* NetworkService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3AAC7E53283FAD8900481BB4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3AC7220A283FB982000AD5EF /* Extensions */,
+				3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */,
+				3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3AAC7E54283FADB300481BB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC7E29283FAD2B00481BB4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AC7220A283FB982000AD5EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AC7220B283FBAB4000AD5EF /* imageLoaderExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AC72212283FE514000AD5EF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3AC72213283FE5C0000AD5EF /* TextTableViewCell.swift */,
+				3AC72214283FE5C0000AD5EF /* TextTableViewCell.xib */,
+				3AC72217283FE669000AD5EF /* TextFactory.swift */,
+				3A2A5914283FFCED0066B776 /* PictureTableViewCell.swift */,
+				3A2A5915283FFCED0066B776 /* PictureTableViewCell.xib */,
+				3A2A5918284000850066B776 /* PickerTableViewCell.swift */,
+				3A2A5919284000850066B776 /* PickerTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +231,9 @@
 			dependencies = (
 			);
 			name = PryanikiTest;
+			packageProductDependencies = (
+				3AAC7E58283FAF0600481BB4 /* Alamofire */,
+			);
 			productName = PryanikiTest;
 			productReference = 3AAC7E1D283FAD2A00481BB4 /* PryanikiTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +306,9 @@
 				Base,
 			);
 			mainGroup = 3AAC7E14283FAD2A00481BB4;
+			packageReferences = (
+				3AAC7E57283FAF0600481BB4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3AAC7E1E283FAD2A00481BB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AAC7E2D283FAD2B00481BB4 /* LaunchScreen.storyboard in Resources */,
+				3A2A591B284000850066B776 /* PickerTableViewCell.xib in Resources */,
 				3AAC7E2A283FAD2B00481BB4 /* Assets.xcassets in Resources */,
+				3AC72216283FE5C0000AD5EF /* TextTableViewCell.xib in Resources */,
 				3AAC7E28283FAD2A00481BB4 /* Main.storyboard in Resources */,
+				3A2A5917283FFCED0066B776 /* PictureTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +355,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AAC7E25283FAD2A00481BB4 /* ViewController.swift in Sources */,
+				3AC7220C283FBAB5000AD5EF /* imageLoaderExtension.swift in Sources */,
+				3AC72211283FE23F000AD5EF /* TableViewController.swift in Sources */,
+				3A2A591A284000850066B776 /* PickerTableViewCell.swift in Sources */,
+				3AC72215283FE5C0000AD5EF /* TextTableViewCell.swift in Sources */,
+				3AAC7E5B283FAFA400481BB4 /* Entity.swift in Sources */,
 				3AAC7E21283FAD2A00481BB4 /* AppDelegate.swift in Sources */,
+				3AAC7E56283FAEAF00481BB4 /* NetworkService.swift in Sources */,
+				3AC72218283FE669000AD5EF /* TextFactory.swift in Sources */,
+				3A2A5916283FFCED0066B776 /* PictureTableViewCell.swift in Sources */,
 				3AAC7E23283FAD2A00481BB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +706,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AAC7E57283FAF0600481BB4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AAC7E58283FAF0600481BB4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AAC7E57283FAF0600481BB4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AAC7E15283FAD2A00481BB4 /* Project object */;
 }
