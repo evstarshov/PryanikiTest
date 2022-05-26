@@ -15,18 +15,22 @@ class ViewController: UIViewController {
     
     let networkService = NetworkService()
     var items: [Datum] = []
+    var views: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.dataSource = self
         picker.delegate = self
         getData()
+        
     }
     
     private func getData() {
         networkService.makeRequest { [weak self] response in
             guard let self = self else { return }
-            self.items = response
+            guard let response = response else { return }
+            self.items = response.data
+            self.views = response.view
             print(self.items)
             print(self.items.count)
             self.setData()
@@ -54,6 +58,14 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return items.last?.data.variants?[row].text
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let id = items.last?.data.variants?[row].id
+        let objectName = items.last?.name
+        let alertVC = UIAlertController(title: "Initiated by object \(objectName)", message: "Initiated by ID: \(id)", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        present(alertVC, animated: true)
     }
     
 }

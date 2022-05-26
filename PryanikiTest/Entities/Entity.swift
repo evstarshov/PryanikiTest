@@ -14,7 +14,7 @@ struct Welcome: Codable {
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct Datum: Codable, CellModel {
     let name: String
     let data: DataClass
 }
