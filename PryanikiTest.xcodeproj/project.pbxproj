@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A2A5916283FFCED0066B776 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A5914283FFCED0066B776 /* PictureTableViewCell.swift */; };
 		3A2A5917283FFCED0066B776 /* PictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A5915283FFCED0066B776 /* PictureTableViewCell.xib */; };
+		3A2A591A284000850066B776 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A5918284000850066B776 /* PickerTableViewCell.swift */; };
+		3A2A591B284000850066B776 /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A5919284000850066B776 /* PickerTableViewCell.xib */; };
 		3AAC7E21283FAD2A00481BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */; };
 		3AAC7E23283FAD2A00481BB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */; };
 		3AAC7E25283FAD2A00481BB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC7E24283FAD2A00481BB4 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		3A2A5914283FFCED0066B776 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
 		3A2A5915283FFCED0066B776 /* PictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureTableViewCell.xib; sourceTree = "<group>"; };
+		3A2A5918284000850066B776 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		3A2A5919284000850066B776 /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
 		3AAC7E1D283FAD2A00481BB4 /* PryanikiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PryanikiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 				3AC72217283FE669000AD5EF /* TextFactory.swift */,
 				3A2A5914283FFCED0066B776 /* PictureTableViewCell.swift */,
 				3A2A5915283FFCED0066B776 /* PictureTableViewCell.xib */,
+				3A2A5918284000850066B776 /* PickerTableViewCell.swift */,
+				3A2A5919284000850066B776 /* PickerTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AAC7E2D283FAD2B00481BB4 /* LaunchScreen.storyboard in Resources */,
+				3A2A591B284000850066B776 /* PickerTableViewCell.xib in Resources */,
 				3AAC7E2A283FAD2B00481BB4 /* Assets.xcassets in Resources */,
 				3AC72216283FE5C0000AD5EF /* TextTableViewCell.xib in Resources */,
 				3AAC7E28283FAD2A00481BB4 /* Main.storyboard in Resources */,
@@ -357,6 +364,7 @@
 			files = (
 				3AC7220C283FBAB5000AD5EF /* imageLoaderExtension.swift in Sources */,
 				3AC72211283FE23F000AD5EF /* TableViewController.swift in Sources */,
+				3A2A591A284000850066B776 /* PickerTableViewCell.swift in Sources */,
 				3AC72215283FE5C0000AD5EF /* TextTableViewCell.swift in Sources */,
 				3AAC7E25283FAD2A00481BB4 /* ViewController.swift in Sources */,
 				3AAC7E5B283FAFA400481BB4 /* Entity.swift in Sources */,

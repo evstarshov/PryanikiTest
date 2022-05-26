@@ -17,7 +17,6 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
-       
     }
     
     // MARK: - Table view data source
@@ -46,6 +45,12 @@ class TableViewController: UITableViewController {
             let cellModel = CellFactory.cellModel(from: item)
             cell.configurePic(from: cellModel)
             return cell
+            
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "pickerCell", for: indexPath) as! PickerTableViewCell
+            cell.pickerView.dataSource = self
+            cell.pickerView.delegate = self
+            return cell
 
         default:
             print("Do nothing in row")
@@ -72,7 +77,25 @@ class TableViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "textCell")
         tableView.register(UINib(nibName: "TextTableViewCell", bundle: nil), forCellReuseIdentifier: "textCell")
         tableView.register(UINib(nibName: "PictureTableViewCell", bundle: nil), forCellReuseIdentifier: "picCell")
+        tableView.register(UINib(nibName: "PickerTableViewCell", bundle: nil), forCellReuseIdentifier: "pickerCell")
         tableView.rowHeight = 120
         tableView.reloadData()
+    }
+}
+
+// MARK: PickerView Extension
+
+extension TableViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        model.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return model.last?.data.variants![row].text
     }
 }
