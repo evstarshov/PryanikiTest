@@ -105,6 +105,7 @@
 		3AAC7E1F283FAD2A00481BB4 /* PryanikiTest */ = {
 			isa = PBXGroup;
 			children = (
+				3AAC7E2E283FAD2B00481BB4 /* Info.plist */,
 				3AAC7E54283FADB300481BB4 /* Resources */,
 				3AAC7E53283FAD8900481BB4 /* Core */,
 				3AAC7E52283FAD7B00481BB4 /* API */,
@@ -162,7 +163,6 @@
 			children = (
 				3AAC7E20283FAD2A00481BB4 /* AppDelegate.swift */,
 				3AAC7E22283FAD2A00481BB4 /* SceneDelegate.swift */,
-				3AAC7E2E283FAD2B00481BB4 /* Info.plist */,
 			);
 			path = Core;
 			sourceTree = "<group>";
